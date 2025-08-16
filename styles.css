@@ -1,0 +1,127 @@
+table{ /* Requirement-2.A */
+    border: 5px ivory; /* Requirement-2.5 */
+    border-style: groove;
+    background-color: beige; /* Requirement-2.4 */
+}
+
+img{
+    display: block;
+    margin: auto;
+    position:relative; /* Requirement-2.15 */
+    z-index: -1; /* Requirement-2.17 */
+}
+
+ul{
+    list-style-type: square; /* Requirement-2.8 */
+}
+
+body{
+    font-size: large;
+    display: table; /* Requirement-2.12 */
+    margin: auto;
+    vertical-align: middle;
+}
+
+tr, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 5px; /* Requirement-2.6 */
+}
+
+p, h1, h2, h3 { /* Requirement-2.B */
+    font-family: "Delicious Handrawn", serif; /* Requirement-2.1 */
+    font-weight: 300; /* Requirement-2.9 */
+    font-style: normal;
+    letter-spacing: 0.7px; /* Requirement-2.2 */
+    clear: both; /* Requirement-2.13 */
+}
+
+.ambition{ /* Requirement-2.C */
+    font-style: oblique;
+    font-size: x-large;
+    color: salmon /* Requirement-2.3 */
+}
+
+.hidden{ 
+    visibility: hidden; /* Requirement-2.16 */
+}
+
+#end{ /* Requirement-2.D */
+    padding-left: 25%; /* Requirement-2.10 */
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+.box {
+    float: left; /* Requirement-2.11 */
+    width: 33.33%; /* Requirement-2.7 */
+}
+  
+.cravings::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a:hover{ /* Requirement-2.E */
+    color: burlywood;
+}
+
+table td{ /* Requirement-2.F */
+    color: teal;
+}
+
+.navigation{
+    position:absolute;
+    height:80%;
+    width:150px;
+    background-color: burlywood;
+    overflow:hidden;
+    border-radius: 25px;
+    text-align:center;
+}
+
+.navigation a{
+    padding: 2px 10px;
+    color:brown;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+
+    font-family: "DynaPuff", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+#main{
+    margin-left: 170px;
+    padding:5px 10px;
+}
+
+#soup{
+    width: 50%;
+    height: 50%;
+    clear:left;
+}
+
+details{ /* Requirement-2.G */
+    background-color: cadetblue;
+    font-size: xx-large;
+    overflow:scroll; /* Requirement-2.14 */
+    text-align: center;
+}
+
+summary{ /* Requirement-2.H */
+    background-color: darkcyan;
+}
+
+html{
+    background-color: blanchedalmond;
+}
+
+figure figcaption{
+    text-align: center;
+}
