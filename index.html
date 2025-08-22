@@ -2,67 +2,82 @@
 
 <html>
     <head>
-        <!-- Requirement-1.A -->
-        <title>Should I Doordash?</title>
+        <title>Welcome!</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
 
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Font from Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+        <!-- Font from Google Fonts: Newsreader-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+
    </head>
 
     <body>
-        <!-- Requirement-1.B -->
         <header>
-            <h1> This is Janice's HW1 Website! </h1>
-                    <!-- Requirement-1.D removed nav and turned container -->
-            </header>
+            <h1 style="display: inline;" class="newsreader-f"> Hi! &nbsp; </h1> <h2 style="display: inline;" class="newsreader-f"> Welcome to my website, I'm Janice! </h2>
+           &nbsp; <button onclick="nightToggle()" id="night"> <h1> &#127769; </h1></button>
+        </header>
+
             <div class="navigation">
                 <h2> Navigation:</h2>
                 <a href="#top">Home</a>
-                </br>
-                <a href="#end">Footer</a>
-                </br>
-                <!-- Requirement-1.I -->
-                <a href="https://www.doordash.com/store/25010053/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJqamFtcG9uZyIsIml0ZW1faWRzIjpbODMxMzk1MTg4OSw4MzEzOTUxODg2LDgzMTM5NTE4ODddLCJzZWFyY2hfdGVybSI6ImpqYW1wcG9uZyIsInZlcnRpY2FsX2lkIjotOTk5LCJ2ZXJ0aWNhbF9uYW1lIjoiYWxsIn0sInN0b3JlX3ByaW1hcnlfdmVydGljYWxfaWRzIjpbMSw0LDE3NywxOTMsMTk1LDI4NF19&pickup=false">
-                What i'm craving on Doordash right now.</a>
-                </br>
-                <!-- Requirement-1.J -->
-                <a href="crave.html">Rate my tastes?</a>
+              
+                <a href="https://github.com/starey6789">Github</a>
+                
+                <a href="https://www.linkedin.com/in/janicelachan">
+                LinkedIn</a>
             </div>
 
-        <!-- Requirement-1.E -->
+        
         <section id="main">
-            <!-- Requirement-1.F -->
-            <h3>Hi i'm Janice, my current ambitions are to work in:</h3>
-                <!-- Requirement-1.K -->
-                <ul>
-                    <li> 
-                        <!-- Requirement-1.H -->
-                        <span class="ambition">cybersecurity</span> 
-                    </li>
-                    <li> 
-                        <span class="ambition">game development</span> 
-                    </li>
+            
+            <div id="self">
+                <h2> A little bit about me:</h2>
+                <img id="selfie" src="Images/Self.jpg" alt="A selfie of me!" width="200"></img>
+                <h3 class=".newsreader-f"> I am a junior undergraduate majoring in computer science, <br>
+                    Currently I am the <strong style="color:rgb(213, 92, 0)"> Editor of the CPP Game Development Club </strong> and I am an <strong  style="color:rgb(213, 92, 0)"> Avanade STEM scholar </strong> undergoing mentorship from a wonderful SWIFT alumni, Karina Rivera.</h3>
+            </div>
+
+            <h3> I'm familiar with: </h3>
+                <ul class="ambition">
+                    <li class="ambition">Java</li>
+                    <li class="ambition">HTML</li>
+                    <li class="ambition">CSS</li>
+                    <li class="ambition">Github</li>
+                    <li class="ambition">Canva</li>
                 </ul>
-            <!-- Requirement-1.G -->
-            <p>However, web development is very interesting to learn as well.<br>
+
+            <h3>I currently have ambitions to work in:</h3>       
+                <ul class="ambition">
+                    <li> Game Development </li>
+                    <li>Web Development </li>
+                    <li> Cybersecurity </li>
+                </ul>
+            
+           <h2> Why? </h2>
+            <p> Originally, my passion for games such as minecraft and roblox made me interested in developing games and understanding how they work. <br>
+                However, most of my experience with projects are within web development. <br>
+                Mixing design with computer science is something I've come to enjoy from taking CS2250 and a CodePath course, and I'd be enthusiastic to undertake a front-end role.<br>
                 I really want to work on data mining games as a side-hobby, so it'd be helpful to <br>
                 know the inner-workings of a website for potential uses of finding easter eggs hidden in HTML :D <br>
             </p>
             
-            <!-- Requirement-1.O -->
+            
             <table>
                 <tr>
                     <th>Goals for this semester</th>
                     <th>Progression</th>
                 </tr>
 
-                <tr>
-                    <td>Join the SWIFT club for competitions</td>
-                    <td style="text-align: center;">0%</td>
-                </tr>
 
                 <tr>
                     <td>Join the sheCodes club for workshops</td>
@@ -70,30 +85,19 @@
                 </tr>
 
                 <tr>
-                    <td>Join the Game Development club for projects</td>
-                    <td style="text-align: center"> 10%</td>
+                    <td>Staying responsible for tasks for Game Development Club</td>
+                    <td style="text-align: center"> 100%</td>
                 </tr>
 
                 <tr>
-                    <td>Research paper for Augmented Reality</td>
-                    <td style="text-align: center"> 20% </td>
-                </tr>
-
-                <tr>
-                    <td>Stay on top of studying :3c</td>
-                    <td style="text-align: center;"><strong>...</strong></td>
+                    <td>Research: Seeing whether Augmented Reality can benefit enhancing art experiences</td>
+                    <td style="text-align: center"> 75% </td>
                 </tr>
             </table>
-
-            <p>
-                To see the rest of my plans, please click <strong>"Rate my tastes?"</strong> On navigation.
-            </p>
-            <hr>
         </section>
-
-        <!-- Requirement-1.C -->
-        <footer id="end">
-            <p> Disclaimer: This checkpoint is for HW2: Adding Style </p>
-        </footer>
     </body>
+    
+    <footer id="end">
+            <p> jlachan@cpp.edu </p>
+        </footer>
 </html>
