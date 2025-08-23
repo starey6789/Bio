@@ -23,7 +23,7 @@
 
     <body>
         <header>
-            <h1 style="display: inline;" class="newsreader-f"> Hi! &nbsp; </h1> <h2 style="display: inline;" class="newsreader-f"> Welcome to my website, I'm Janice! </h2>
+            <h1 style="display: inline;" class="newsreader-f">Hi! I'm Janice! </h1>
            &nbsp; <button onclick="nightToggle()" id="night"> <h1> &#127769; </h1></button>
         </header>
 
@@ -35,6 +35,8 @@
                 
                 <a href="https://www.linkedin.com/in/janicelachan">
                 LinkedIn</a>
+
+                <a href="#homePage">Design Drafts</a>
             </div>
 
         
@@ -47,56 +49,121 @@
                     Currently I am the <strong style="color:rgb(213, 92, 0)"> Editor of the CPP Game Development Club </strong> and I am an <strong  style="color:rgb(213, 92, 0)"> Avanade STEM scholar </strong> undergoing mentorship from a wonderful SWIFT alumni, Karina Rivera.</h3>
             </div>
 
-            <h3> I'm familiar with: </h3>
-                <ul class="ambition">
-                    <li class="ambition">Java</li>
-                    <li class="ambition">HTML</li>
-                    <li class="ambition">CSS</li>
-                    <li class="ambition">Github</li>
-                    <li class="ambition">Canva</li>
-                </ul>
+            <div class="revealable active">
+                <h3> I'm familiar with: </h3>
+                    <div id="tools">
+                        <div class="skills">
+                        <img src="Images/Java.png" alt="Java" width="25%">
+                        <img src="Images/HTML.png" alt="HTML" width="25%">
+                        <img src="Images/CSS.png" alt="CSS" width="25%">
+                        </div>
+                        <br>
+                        <div class="skills">
+                        <img src="Images/Github.png" alt="Github" width="25%">
+                        <img src="Images/Canva.png" alt="Canva" width="25%">
+                        <img src="Images/Figma.png" alt="Figma" width="25%">
+                        </div>
+                    </div>
+            </div>
 
+            <div class="revealable active">
             <h3>I currently have ambitions to work in:</h3>       
                 <ul class="ambition">
                     <li> Game Development </li>
                     <li>Web Development </li>
                     <li> Cybersecurity </li>
                 </ul>
+            </div>
+
+             <div class="revealable active">
+                <h2> Why? </h2>
+                <p> Originally, my passion for games such as minecraft and roblox made me interested in developing games and understanding how they work. <br>
+                    However, most of my experience with projects are within web development. <br>
+                    Mixing design with computer science is something I've come to enjoy from taking CS2250 and a CodePath course, and I'd be enthusiastic to undertake a front-end role.<br>
+                    I really want to work on data mining games as a side-hobby, so it'd be helpful to <br>
+                    know the inner-workings of a website for potential uses of finding easter eggs hidden in HTML :D <br>
+                </p>
+            </div>
             
-           <h2> Why? </h2>
-            <p> Originally, my passion for games such as minecraft and roblox made me interested in developing games and understanding how they work. <br>
-                However, most of my experience with projects are within web development. <br>
-                Mixing design with computer science is something I've come to enjoy from taking CS2250 and a CodePath course, and I'd be enthusiastic to undertake a front-end role.<br>
-                I really want to work on data mining games as a side-hobby, so it'd be helpful to <br>
-                know the inner-workings of a website for potential uses of finding easter eggs hidden in HTML :D <br>
-            </p>
-            
-            
-            <table>
-                <tr>
-                    <th>Goals for this semester</th>
-                    <th>Progression</th>
-                </tr>
+            <div class="gallery">
+                <div class="slide" id="homePage">
+                    <div class="number">1/4</div>
+                     <img src="Images/Home.png" alt="HomePage" width="50%">
+                </div>
+                <div class="slide">
+                    <div class="number">2/4</div>
+                     <img src="Images/Desktop.png" alt="DesktopPage" width="50%">
+                </div>
+                <div class="slide">
+                    <div class="number">3/4</div>
+                     <img src="Images/OpenFiles.png" alt="FilePage" width="50%">
+                </div>
+               <div class="slide">
+                    <div class="number">4/4</div>
+                     <img src="Images/Files.png" alt="Files" width="50%">
+                </div>
+                
+                <div id="galleryControls">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
 
+            <br>
 
-                <tr>
-                    <td>Join the sheCodes club for workshops</td>
-                    <td style="text-align: center;">100%</td>
-                </tr>
-
-                <tr>
-                    <td>Staying responsible for tasks for Game Development Club</td>
-                    <td style="text-align: center"> 100%</td>
-                </tr>
-
-                <tr>
-                    <td>Research: Seeing whether Augmented Reality can benefit enhancing art experiences</td>
-                    <td style="text-align: center"> 75% </td>
-                </tr>
-            </table>
+            <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
         </section>
     </body>
     
+    
+
     <footer id="end">
             <p> jlachan@cpp.edu </p>
         </footer>
