@@ -55,6 +55,7 @@ p, h1, h2, h3 { /* Requirement-2.B */
 
 * {
     box-sizing: border-box;
+    font-family: "Delicious Handrawn", serif;
 }
   
 .box {
@@ -78,7 +79,7 @@ table td{ /* Requirement-2.F */
 
 .navigation{
     position:fixed;
-    height:50%;
+    height:55%;
     width:150px;
     background-color: burlywood;
     border-radius: 25px;
@@ -349,4 +350,8 @@ footer{
   font-size: 12px;
   padding: 8px 12px;
   top: 0;
+}
+
+.gallery h1{
+    color: brown;
 }
